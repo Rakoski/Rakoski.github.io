@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Mateus Rakoski" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Mateus Rakoski">Mateus Stainer Rakoski</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:mastrakoski@gmail.com" class="contact-link">mastrakoski@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+55 (44) 99136-6838</a>
+            </div>
+
+          <!--</li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+
+              <button onclick="https://www.linkedin.com/in/mateus-rakoski/">LinkedIn</button>
+            </div>
+
+          </li>-->
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Paraná, Brazil</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/mateus-rakoski/" class="social-link">
+              <ion-icon name="logo-LinkedIn" class="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a fullstack developer from Brazil!
+            I enjoy
+            programming and web development. I am mainly specialised in Javascript, Typescript, Python and Java.
+          </p>
+
+          <h1>Description</h1>
+
+          <p>
+            I am a software Engineer Undegrad from the Federal Institute of Paraná, Brazil. In this page, I will showcase some of my projects and work that I do.
+            I have also helped many teamwork projects that will also be shown here. The people I worked with in these projects can confirm that I will go above
+            and beyond to help anyone who gives me a chance, including you!
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I Do</h3>
+
+          <ul class="service-list">
+
+            <button class="">
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Front-end</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality Mobile and web interfaces with HTML/CSS, Javascript and React.js for web
+                  as well as React Native for mobile environments
+                </p>
+              </div>
+
+            </li>
+          </button>
+
+          <button class="service-button">
+          <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Back-end</h4>
+
+                <p class="service-item-text">
+                  Back-end web development using Javascript/Typescript with express.js for the Node.js runtime environment, as well as 
+                  Java's Springboot back-end framework 
+                </p>
+              </div>
+
+            </li>
+          </button>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!--
+          - The modal container holds the navbar of portfolio and resume
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Federal Institute of Paraná</h4>
+
+              <span>2023 — today</span>
+              <p class="timeline-text">
+                Bachelorship in Software Engineering; Expected graduation date: Dec. 2027
+              </p>
+  
+              </li>
+
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <a href="https://www.apicesistemas.com.br/index">
+                <h4 class="h4 timeline-item-title">Ápice Sistemas</h4>
+              </a>
+
+              <span>Sep. 2023 — today</span>
+
+              <p class="timeline-text">
+                Lead the creation, refactoring, and maintenance of local (Brazilian) web services, optimizing for enhanced performance on low-resource devices.
+              </p>
+              <p class="timeline-text" style="margin-top: 10px;">
+                Utilized more efficient and less complex data structures and SQL syntaxes to boost system performance.
+              </p>
+              <p class="timeline-text" style="margin-top: 10px;">
+                Applied agile methodologies, including Scrum with Kanban usage, teamwork, and deployment to local and cloud servers using CI/CD Pipelines, Docker, Cloudflare and Github Pages.
+              </p>
+              <p class="timeline-text" style="margin-top: 10px;">
+                Technologies: JavaScript, Node.js, React.js, React Native, Express.js, MySQL, MongoDB, Git, GitHub
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <a href="https://ifpr.edu.br">
+                <h4 class="h4 timeline-item-title">Federal Institute of Paraná</h4>
+              </a>
+
+              <span>Feb. 2023 — Aug. 2023</span>
+
+              <p class="timeline-text" style="margin-top: 10px;">
+                Contributed to academic integration projects and trained colleagues, leading projects from scratch that benefited more than 200 students.
+              </p>
+              <p class="timeline-text" style="margin-top: 10px;">
+                Managed integration and continuous maintenance projects, providing leadership and training to less experienced students.
+              </p>
+              <p class="timeline-text" style="margin-top: 10px;">
+                Technologies: Java, Springboot, Dart, Flutter, MySQL, Git, GitHub
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="3d modeling">
+              <a href="https://github.com/Rakoski/leetcode-problem-storer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="Leetcode Problem Storer web app" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Leetcode Problem Storage web app</h3>
+
+                <p class="project-category">Leetcode problem storage web app built using Turborepo, Relay, TypeScript, Node.js, React.js, Next.js, GraphQL, and MongoDB. It allows users to store and organize their leetcode problems they have solved. </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="building drawing">
+              <a href="https://github.com/Rakoski/Apice">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="Apice's management system" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Apice's internship Take-home Project</h3>
+
+                <p class="project-category">"The project is an application for managing information related to neighborhoods, cities, individuals, products, and sales.
+                  It was just a CRUD project as a step to get their internship offer.
+                </p>
+
+              </a>
+            </li>
+
+                        
+            <li class="project-item  active" data-filter-item data-category="building drawing">
+              <a href="https://github.com/Rakoski/aplicacao-simbiose">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="Restaurant Web App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" href="https://github.com/Rakoski/aplicacao-simbiose">Canteens Mobile App</h3>
+
+                <p class="project-category">Project to administer Instituto Federal do Parana's restaurant & athletics association.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="building drawing">
+              <a href="https://github.com/Rakoski/Back-end-Copel">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/copel2_img.webp" alt="Copel's back-end" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Back-end for COPEL (Parana state's energy distributor company)</h3>
+
+                <p class="project-category">Collaborated on a project involving data processing and cross-sector collaboration, particularly with electrical engineering through an ESP-32.</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="3d modeling">
+              <a href="https://github.com/Rakoski/Calculator">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/calculator3_img.png" alt="Calculator" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Calculator</h3>
+
+                <p class="project-category">Simple calculator project to complete The Odin Project's introduction to web programming course.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="building drawing">
+              <a href="https://github.com/Rakoski/BotDiscord_Python">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/discord_bot_img.png" alt="Discord Bot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" href="https://github.com/Rakoski/BotDiscord_Python">Discord Bot</h3>
+
+                <p class="project-category">My first ever project! A discord bot for my local university's community.</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="skills">
+
+        <header>
+          <h2 class="h2 article-title">Skills</h2>
+        </header>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Languages</h3>
+
+          <ul class="skills-list content-card" style="color: white; margin-bottom: 100px;">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Javascript</h5>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Typescript</h5>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+              </div>
+
+            </li>
+
+          </ul>
+
+          <h3 class="h3 skills-title" style="margin-top: -50px;">Frameworks & Libraries</h3>
+
+          <ul class="skills-list content-card" style="color: white; margin-bottom: 100px;">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5"> GraphQL</h5>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">React.js</h5>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">React Native</h5>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Node.js</h5>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Springboot</h5>
+              </div>
+
+            </li>
+
+          </ul>
+
+          
+          <h3 class="h3 skills-title" style="margin-top: -50px;">DevOps & Tools</h3>
+
+          <ul class="skills-list content-card" style="color: white; margin-bottom: 100px;">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">MongoDB</h5>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">MySQL</h5>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Docker</h5>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">AWS</h5>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Git & Github</h5>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
