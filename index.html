@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
+  <title id="pageTitle">Mateus Rakoski Software Engineer</title>
 
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="/assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/my-avatar.png" .png"" type="image/svg+xml">
 
   <!--
     - custom css link
@@ -42,18 +42,21 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="/assets/images/my-avatar.png" alt="Mateus Rakoski" width="80">
+          <img src="assets/images/my-avatar.png" alt="Mateus Rakoski" width="80">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Mateus Rakoski">Mateus Stainer Rakoski</h1>
 
-          <p class="title">Software Engineer</p>
+          <div class="tags">
+            <p class="title" id="job">Software Engineer</p>
+            <p class="title" id="otherJob">FullStack Developer</p>
+
+          </div>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
+          <span id="contact">Show Contacts</span>
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
@@ -74,7 +77,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:mastrakoski@gmail.com" class="contact-link">mastrakoski@gmail.com</a>
+              <a href="mailto:allan-sjp@hotmail.com" class="contact-link">mastrakoski@gmail.com</a>
             </div>
 
           </li>
@@ -88,7 +91,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+55 (44) 99136-6838</a>
+              <a href="tel:+5544998260968" class="contact-link">+55 (44) 99136-6838</a>
             </div>
 
           <li class="contact-item">
@@ -100,7 +103,7 @@
             <div class="contact-info">
               <p class="contact-title">Github</p>
 
-              <a href="https://github.com/Rakoski" class="contact-link">https://github.com/Rakoski</a>
+              <a href="https://github.com/Rakoski" class="contact-link">github.com/Rakoski</a>
             </div>
 
           </li>
@@ -114,7 +117,23 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Paraná, Brazil</address>
+              <a href="https://www.google.com/maps/d/u/0/viewer?mid=1xwoq78Mcq9A6JWb_prJqYxsHh60&hl=en_US&ll=49.346435966947254%2C154.73367382061932&z=13"
+                class="contact-link">Paraná, Brasil</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="clipboard-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title" id="curricu">Curriculum</p>
+
+              <a href="https://docs.google.com/document/d/18P9-DWvHIXUuCrJFVc66H8r3ymO3K6ywSiXSghnBpPE/edit?usp=sharing"
+                class="contact-link">docs.google.com/document/curriculum/mateus</a>
             </div>
 
           </li>
@@ -156,7 +175,7 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link>About</button>
           </li>
 
           <li class="navbar-item">
@@ -171,6 +190,14 @@
             <button class="navbar-link" data-nav-link>Skills</button>
           </li>
 
+          <li>
+            <div class="tags">
+              <button id="toggle-language">
+                <img src="./assets/images/usa.svg" alt="Web development icon" id="language-icon" width="30">
+              </button>
+            </div>
+          </li>
+
         </ul>
 
       </nav>
@@ -182,22 +209,23 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title" id="titleMainOne">About</h2>
         </header>
 
         <section class="about-text">
-          <p>
-            I'm a fullstack developer from Brazil!
-            I enjoy
-            programming and web development. I am mainly specialised in Javascript, Typescript, Python and Java.
+          <p id="textOne">
+            I'm a Brazilian full-stack developer, passionate about innovation and problem-solving. With expertise in
+            both front-end and back-end development, I excel in crafting intuitive user interfaces and architecting
+            robust solutions. From HTML/CSS to Node.js and Spring Boot, I tackle every aspect of the development
+            process, constantly seeking new challenges to expand my skill set. <br>
           </p>
 
-          <h1>Description</h1>
+          <h1 id="descricao">Description</h1>
 
-          <p>
-            I am a software Engineer Undergrad from the Federal Institute of Paraná, Brazil. In this page, I will showcase some of my projects and work that I do.
-            I have also helped many teamwork projects that will also be shown here. The people I worked with in these projects can confirm that I will go above
-            and beyond to help anyone who gives me a chance, including you!
+          <p id="textDuo">
+            I am an undergraduate Software Engineer from the Federal Institute of Paraná, Brazil. This is my portfolio,
+            where I will showcase a little of my tech stack, test projects for vacancies, college projects, and training
+            projects.
           </p>
         </section>
 
@@ -208,48 +236,75 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What I Do</h3>
+          <h3 class="h3 service-title" id="what">What I Do</h3>
 
           <ul class="service-list">
+<!-- 
+            <button class="">
+              <li class="service-item">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/mobile-engineering.svg" alt="Mobile development icon" width="60">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title" id="mobile">Mobile Development</h4>
+
+                  <p class="service-item-text" id="textMobile">
+                    With expertise in both native, cross-platform, and Progressive Web App (PWA) development, I excel in
+                    crafting intuitive mobile solutions. Leveraging technologies like React Native, Flutter, and PWA
+                    standards, I ensure seamless user experiences while collaborating closely with teams to deliver
+                    impactful applications.
+                  </p>
+                </div>
+
+              </li>
+            </button> -->
 
             <button class="">
-            <li class="service-item">
+              <li class="service-item">
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
+                <div class="service-icon-box">
+                  <img src="./assets/images/web-programming.svg" alt="Web development icon" width="60">
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Front-end</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Front-end</h4>
 
-                <p class="service-item-text">
-                  The most modern and high-quality Mobile and web interfaces with HTML/CSS, Javascript and React.js for web
-                  as well as React Native for mobile environments
-                </p>
-              </div>
+                  <p class="service-item-text" id="textFront">
+                    Specializing in creating modern and high-quality web interfaces, I leverage HTML/CSS, JavaScript,
+                    React.js and Next.js to craft engaging user experiences. With a keen eye for design and functionality, I
+                    ensure that each web application I develop is both visually appealing and user-friendly.
+                    Additionally, my expertise extends to developing responsive designs, guaranteeing seamless
+                    experiences across various devices and screen sizes.
+                  </p>
+                </div>
 
-            </li>
-          </button>
+              </li>
+            </button>
 
-          <button class="service-button">
-          <li class="service-item">
+            <button class="service-button">
+              <li class="service-item">
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-server.svg" alt="Web development icon" width="60">
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Back-end</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Back-end</h4>
 
-                <p class="service-item-text">
-                  Back-end web development using Javascript/Typescript with express.js for the Node.js runtime environment, as well as 
-                  Java's Springboot back-end framework 
-                </p>
-              </div>
+                  <p class="service-item-text" id="textBack">
+                    Bringing extensive expertise in back-end web development, I proficiently utilize
+                    Java and Spring boot for the JVM runtime environment. Additionally, my skills
+                    extend to Node.js, where I deliver robust and scalable back-end solutions that
+                    power modern web applications. With a focus on performance and reliability, I design and implement
+                    efficient server-side architectures, ensuring seamless integration with front-end systems and
+                    providing secure data management functionalities.
+                  </p>
+                </div>
 
-            </li>
-          </button>
+              </li>
+            </button>
 
           </ul>
 
@@ -271,7 +326,7 @@
           <section class="testimonials-modal">
 
             <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
+              <!-- <ion-icon name="close-outline"></ion-icon> -->
             </button>
 
           </section>
@@ -292,7 +347,7 @@
       <article class="resume" data-page="resume">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title" id="resume">Resume</h2>
         </header>
 
         <section class="timeline">
@@ -302,21 +357,21 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
+            <h3 class="h3" id="education">Education</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Federal Institute of Paraná</h4>
+              <h4 class="h4 timeline-item-title" id="institute">Federal Institute of Paraná</h4>
 
-              <span>2023 — today</span>
-              <p class="timeline-text">
-                Bachelorship in Software Engineering; Expected graduation date: Dec. 2027
+              <span id="dateEduc">2020 — today</span>
+              <p class="timeline-text" id="textEduc">
+                Bachelorship in Software Engineering; Expected graduation date: Dec. 2026
               </p>
-  
-              </li>
+
+            </li>
 
 
             </li>
@@ -332,7 +387,7 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3" id="xp">Experience</h3>
           </div>
 
           <ol class="timeline-list">
@@ -340,44 +395,50 @@
             <li class="timeline-item">
 
               <a href="https://www.apicesistemas.com.br/index">
-                <h4 class="h4 timeline-item-title">Ápice Sistemas</h4>
+                <h4 class="h4 timeline-item-title">Ápice Sistemas - Software Engineer Intern</h4>
               </a>
 
-              <span>Sep. 2023 — today</span>
+              <span id="dateDuo">October 2023 — June 2024</span>
 
-              <p class="timeline-text">
-                Lead the creation, refactoring, and maintenance of local (Brazilian) web services, optimizing for enhanced performance on low-resource devices.
+              <p class="timeline-text" id="textJobOne">
+                Contributing to the creation, refactoring and maintenance of web services, optimizing for better
+                performance on low-resource devices.
               </p>
-              <p class="timeline-text" style="margin-top: 10px;">
-                Utilized more efficient and less complex data structures and SQL syntaxes to boost system performance.
+              <p class="timeline-text" style="margin-top: 10px;" id="textJobDuo">
+                Acting on restaurant management projects, from stock control, condominium management,
+                specifically access control with biometric recognition, integration with ERP, among other projects
+                provided by the company
               </p>
-              <p class="timeline-text" style="margin-top: 10px;">
-                Applied agile methodologies, including Scrum with Kanban usage, teamwork, and deployment to local and cloud servers using CI/CD Pipelines, Docker, Cloudflare and Github Pages.
+              <p class="timeline-text" style="margin-top: 10px;" id="textJobTree">
+                Applied agile methodologies, including Scrum with Kanban usage, teamwork, and deployment to local and
+                cloud servers using CI/CD Pipelines, Docker and Cloudflare.
               </p>
-              <p class="timeline-text" style="margin-top: 10px;">
-                Technologies: JavaScript, Node.js, React.js, React Native, Express.js, MySQL, MongoDB, Git, GitHub
+              <p class="timeline-text" style="margin-top: 10px;" id="tecOne">
+                Technologies: JavaScript, Node.js, React.js, React Native, Express.js, MySQL, Git, GitHub
               </p>
 
             </li>
 
             <li class="timeline-item">
-
-              <a href="https://ifpr.edu.br">
-                <h4 class="h4 timeline-item-title">Federal Institute of Paraná</h4>
+              <a href="#">
+                <h4 class="h4 timeline-item-title">UniFatecie University Center - Software Engineer</h4>
               </a>
-
-              <span>Feb. 2023 — Aug. 2023</span>
-
-              <p class="timeline-text" style="margin-top: 10px;">
-                Contributed to academic integration projects and trained colleagues, leading projects from scratch that benefited more than 200 students.
+              <span id="dateDuo">July 2024 - Present</span>
+              <p class="timeline-text" id="textJobOne">
+                Development and prototyping of educational systems for a Higher Education institution with more than 200,000 students across Brazil.
               </p>
-              <p class="timeline-text" style="margin-top: 10px;">
-                Managed integration and continuous maintenance projects, providing leadership and training to less experienced students.
+              <p class="timeline-text" style="margin-top: 10px;" id="textJobDuo">
+                As an Engineer, involved in implementing improvements to a Free Courses platform, participating in its redesign, 
+                both in it's Backend and Frontend, transforming an architecture that had constant bottlenecks due to scale into 
+                one that can serve all students smoothly with spare processing capacity.
               </p>
-              <p class="timeline-text" style="margin-top: 10px;">
-                Technologies: Java, Springboot, Dart, Flutter, MySQL, Git, GitHub
+              <p class="timeline-text" style="margin-top: 10px;" id="textJobTree">
+                Working with agile methodologies including Scrum and Kanban, utilizing CI/CD (Azure DevOps) and Git Flow, 
+                while maintaining programming best practices and focusing on teamwork and client issue resolution.
               </p>
-
+              <p class="timeline-text" style="margin-top: 10px;" id="tecOne">
+                Technologies: NextJS, React, Spring Boot, SQL Server, Azure Cloud
+              </p>
             </li>
 
           </ol>
@@ -393,7 +454,7 @@
       <article class="portfolio" data-page="portfolio">
 
         <header>
-          <h2 class="h2 article-title">Projects</h2>
+          <h2 class="h2 article-title" id="projectText">Projects</h2>
         </header>
 
         <section class="projects">
@@ -403,6 +464,7 @@
             <button class="filter-select" data-select>
 
               <div class="select-icon">
+                dddd
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
 
@@ -412,117 +474,187 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="3d modeling">
-              <a href="https://github.com/Rakoski/leetcode-problem-storer">
+            <li class="project-item active" data-filter-item data-category="3d modeling">
+              <h3 class="project-title" id="projectOne">Loan and Concessions Management System for Students and
+                Externals</h3>
+              <a href="./assets/images/homeArmarios.png">
+                <img src="./assets/images/homeArmarios.png"
+                  alt="Loan and Concessions Management System for Students and Externals" loading="lazy">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="Leetcode Problem Storer web app" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Leetcode Problem Storage web app</h3>
-
-                <p class="project-category">Leetcode problem storage web app built using Turborepo, Relay, TypeScript, Node.js, React.js, Next.js, GraphQL, and MongoDB. It allows users to store and organize their leetcode problems they have solved. </p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="building drawing">
-              <a href="https://github.com/Rakoski/Apice">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="Apice's management system" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Apice's internship Take-home Project</h3>
-
-                <p class="project-category">This project is an application for managing information related to neighborhoods, cities, individuals, products, and sales.
-                  It was just a simple CRUD project using Javascript, React.js, Node.js and MySQL as a step to get my internship offer.
+                <p class="project-category" id="projectOneTextOne">This project was born as a challenge for second-year
+                  engineering students in 2022. Requested by institute employees, the best solution would be presented
+                  and, if approved, deployed. It consists of a system that allows students to log in and borrow lockers,
+                  recording the time and who borrowed them. It also allows employees to grant lockers to people outside
+                  the institute by registering the concession. The project innovated the way loans are made, since
+                  students only need the loan terminal and no longer need assistance from servers. The project was
+                  deployed in September 2023 and is still in use at the Paranavaí Campus library.</p>
+                <p class="project-category" id="projectOneTec">
+                  Technologies: Java, Hibernate, MVC pattern, PostgreSQL, Java Swing, Git, GitHub
                 </p>
+              </a>
 
+              <a href="https://github.com/marceloTerencianiIFPR/ArmariosIFPR">
+                <p class="project-category" id=projectOneRepo>
+                  Repository: github.com/marceloTerencianiIFPR/ArmariosIFPR
+                </p>
               </a>
             </li>
 
-                        
-            <li class="project-item  active" data-filter-item data-category="building drawing">
-              <a href="https://github.com/Rakoski/aplicacao-simbiose">
+            <li class="project-item active" data-filter-item data-category="3d modeling">
+              <h3 class="project-title" id="projectMobile">React native base project.</h3>
+              <a href="./assets/images/mobile.png">
+                <img src="./assets/images/mobile.png"
+                  alt="Loan and Concessions Management System for Students and Externals" loading="lazy">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <p class="project-category" id="projectMobileTextOne">As I needed these functions for another project, I
+                  implemented login and tracking features in a base application to speed up the development process. I
+                  used JWT authentication to ensure security in login and all transactions. Additionally, the
+                  application shares location in real-time via WebSockets.</p>
+              </a>
 
-                  <img src="./assets/images/project-8.jpg" alt="Restaurant Web App" loading="lazy">
-                </figure>
+              <a href="https://drive.google.com/file/d/1YurrmUCSZp3rw8ZTz2b_r8eBmI2z-BaG/view?usp=sharing">
+                <p class="project-category" id="projectVideoDuo">
+                  Take a look at here: drive.google.com/file/demonstracao/mobile
+                </p>
+              </a>
 
-                <h3 class="project-title" href="https://github.com/Rakoski/aplicacao-simbiose">Local university's canteen Mobile App</h3>
-
-                <p class="project-category">Project to administer Instituto Federal do Parana's athletics association restaurant.</p>
-
+              <a href="https://github.com/OAllanFernando/app-rn-websockets">
+                <p class="project-category" id="projectMobileRepo">
+                  Repository: github.com/OAllanFernando/app-rn-websockets
+                </p>
+                <p class="project-category" id="projectMobileTec">
+                  Technologies: React native, Jwt Authentication, websockets, Git, GitHub
+                </p>
+              </a>
+              <a href="https://github.com/OAllanFernando/api-websockets">
+                <p class="project-category" id="projectMobileRepoDuo">
+                  Repository: github.com/OAllanFernando/api-websockets
+                </p>
+                <p class="project-category" id="projectMobileTecDuo">
+                  Technologies: Java, Spring Boot, JWT, MySql, Spring Security, Spring Websocket, Git, GitHub
+                </p>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="building drawing">
-              <a href="https://github.com/Rakoski/Back-end-Copel">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+            <li class="project-item active" data-filter-item data-category="3d modeling">
+              <h3 class="project-title" id="projectDuo">Task registration system</h3>
+              <a href="./assets/images/homeTasks.png">
+                <img src="./assets/images/homeTasks.png" alt="Task registration system" loading="lazy">
 
-                  <img src="./assets/images/copel2_img.webp" alt="Copel's back-end" loading="lazy">
-                </figure>
+                <p class="project-category" id="projectDuoTextOne">Task registration system with tags related to each
+                  task. A SPA was developed as a test for a company. It consists of task crud and tags with
+                  authentication and graphics. JWT was used for authentication, and a holidays API was also used to
+                  specify the holiday on the selected dates.</p>
 
-                <h3 class="project-title">Back-end for COPEL (Parana state's energy distributor company)</h3>
+              </a>
 
-                <p class="project-category">Collaborated on a project involving data processing and cross-sector collaboration, particularly with electrical engineering through an ESP-32.</p>
+              <a href="https://drive.google.com/file/d/1MQljFvSo_4upB2TRMuj5VsMH1FeodgmE/view?usp=sharing">
+                <p class="project-category" id="projectVideo">
+                  I recently made a video of this project, you can watch it here: drive.google.com/file/demonstracao
+                </p>
+              </a>
 
+              <a href="https://github.com/OAllanFernando/agende-tarefas">
+                <p class="project-category" id="projectDuoRepo">
+                  Repository: github.com/OAllanFernando/agende-tarefas
+                </p>
+                <p class="project-category" id="projectDuoTec">
+                  Technologies: React, Git, GitHub
+                </p>
+              </a>
+              <a href="https://github.com/OAllanFernando/api-agende-tarefas">
+                <p class="project-category" id="projectDuoRepoDuo">
+                  Repository: github.com/OAllanFernando/api-agende-tarefas
+                </p>
+                <p class="project-category" id="projectDuoTecDuo">
+                  Technologies: Java, Spring Boot, JWT, MySql, Git, GitHub
+                </p>
               </a>
             </li>
 
 
-            <li class="project-item  active" data-filter-item data-category="3d modeling">
-              <a href="https://github.com/Rakoski/Calculator">
+            <li class="project-item active" data-filter-item data-category="3d modeling">
+              <h3 class="project-title" id="projectTree">IVendi, selling products system</h3>
+              <a href="./assets/images/ivendi.png">
+                <img src="./assets/images/ivendi.png" alt="Task registration system" loading="lazy">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <p class="project-category" id="projectTreeText">Product sales system, carried out as a test for a
+                  company. Crud of
+                  Customers, cities, states, products and neighborhoods, the system has a shopping cart layout, records
+                  and
+                  lists sales. Developed to demonstrate logical skills and proficiency in the technologies covered.</p>
 
-                  <img src="./assets/images/calculator3_img.png" alt="Calculator" loading="lazy">
-                </figure>
+              </a>
 
-                <h3 class="project-title">Calculator</h3>
-
-                <p class="project-category">Simple calculator project to complete The Odin Project's introduction to web programming course.</p>
-
+              <a href="https://github.com/OAllanFernando/iVendi">
+                <p class="project-category" id="projectTreeRepo">
+                  Repository: github.com/OAllanFernando/iVendi
+                </p>
+                <p class="project-category" id="projectTreeTec">
+                  Technologies: React, Git, GitHub
+                </p>
+              </a>
+              <a href="https://github.com/OAllanFernando/API_NODE-RegistroDeVendas">
+                <p class="project-category" id="projectTreeRepoDuo">
+                  Repository: github.com/OAllanFernando/API_NODE-RegistroDeVendas
+                </p>
+                <p class="project-category" id="projectTreeTecDuo">
+                  Technologies: Node.js, Sequelize, MySql, Git, GitHub
+                </p>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="building drawing">
-              <a href="https://github.com/Rakoski/Discord_Bot">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+            <li class="project-item active" data-filter-item data-category="3d modeling">
+              <h3 class="project-title" id="projectFour">Sell Me, site to sell package sales sites and system plans</h3>
+              <a href="./assets/images/in-progress.svg">
+                <img src="./assets/images/in-progress.svg" alt="Task registration system" loading="lazy">
 
-                  <img src="./assets/images/discord_bot_img.png" alt="Discord Bot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title" href="https://github.com/Rakoski/Discord_Bot">Discord Bot</h3>
-
-                <p class="project-category">My first ever project! A discord bot for my local university's community written in Python.</p>
-
+                <p class="project-category" id="projectFourText">Project will make it possible to purchase websites to
+                  sell plans and system
+                  packages of different types.</p>
+                <p class="project-category" id="progress">
+                  In progress
+                </p>
               </a>
+
+              <a>
+                <p class="project-category" id="projectFourTec">
+                  Technologies: Python, Django, GitHub, Git, AWS, EC2, S3, MySQL
+                </p>
+              </a>
+
             </li>
+
+            <div class="separatorOne"></div>
+
+            <li class="project-item active" data-filter-item data-category="3d modeling">
+              <h3 class="project-title" id="projectFive">course completion work, javascript locker system</h3>
+              <a href="./assets/images/in-progress.svg">
+                <img src="./assets/images/in-progress.svg" alt="course completion work, javascript locker system"
+                  loading="lazy">
+
+                <p class="project-category" id="projectFiveText">It was proposed to the collegiate to transcribe the
+                  federal institute's
+                  cabinet system from Java to Javascript, to explain the differences in development between
+                  technologies, changing from desktop to web.</p>
+                <p class="project-category" id="progressOne">
+                  In progress
+                </p>
+              </a>
+
+              <a>
+                <p class="project-category" id="projectFiveTec">
+                  Technologies: Javascript, Node.js, Electron.js, Git, PostgreSQL
+                </p>
+              </a>
+
+
+            </li>
+
+
+
 
           </ul>
 
@@ -537,145 +669,229 @@
       <article class="contact" data-page="skills">
 
         <header>
-          <h2 class="h2 article-title">Skills</h2>
+          <h2 class="h2 article-title" id="habilidades">Skills</h2>
         </header>
 
         <section class="skill">
 
-          <h3 class="h3 skills-title">Languages</h3>
+          <h3 class="h3 skills-title" id="ling">Languages</h3>
 
-          <ul class="skills-list content-card" style="color: white; margin-bottom: 100px;">
-
+          <ul class="skills-list content-card">
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">Python</h5>
               </div>
-
             </li>
-
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">Javascript</h5>
               </div>
-
             </li>
-
             <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Typescript</h5>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">Java</h5>
               </div>
-
             </li>
-
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">C, C++</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Dart</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Assembly</h5>
+              </div>
+            </li>
           </ul>
 
-          <h3 class="h3 skills-title" style="margin-top: -50px;">Frameworks & Libraries</h3>
 
-          <ul class="skills-list content-card" style="color: white; margin-bottom: 100px;">
+          <h3 class="h3 skills-title">Frameworks & Libraries</h3>
 
+          <ul class="skills-list content-card">
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5"> GraphQL</h5>
+                <h5 class="h5">Flutter</h5>
               </div>
-
             </li>
-
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">React.js</h5>
+                <h5 class="h5">React</h5>
               </div>
-
             </li>
-
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">React Native</h5>
               </div>
-
             </li>
-
             <li class="skills-item">
-
+              <div class="title-wrapper">
+                <h5 class="h5">Spring Boot</h5>
+              </div>
+            </li>
+            <li class="skills-item">
               <div class="title-wrapper">
                 <h5 class="h5">Node.js</h5>
               </div>
-
             </li>
-
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">Springboot</h5>
+                <h5 class="h5">Django</h5>
               </div>
-
             </li>
-
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Electron</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Jhipster</h5>
+              </div>
+            </li>
           </ul>
 
-          
-          <h3 class="h3 skills-title" style="margin-top: -50px;">DevOps & Tools</h3>
+          <h3 class="h3 skills-title">ORMs & Database</h3>
 
-          <ul class="skills-list content-card" style="color: white; margin-bottom: 100px;">
-
+          <ul class="skills-list content-card">
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">MongoDB</h5>
+                <h5 class="h5">Hibernate</h5>
               </div>
-
             </li>
-
             <li class="skills-item">
-
+              <div class="title-wrapper">
+                <h5 class="h5">Sequelize</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">DjangoORM</h5>
+              </div>
+            </li>
+            <li class="skills-item">
               <div class="title-wrapper">
                 <h5 class="h5">MySQL</h5>
               </div>
-
             </li>
-
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">Docker</h5>
+                <h5 class="h5">PostgreSQL</h5>
               </div>
-
             </li>
+          </ul>
 
+          <h3 class="h3 skills-title">Testing & DevOps</h3>
+
+          <ul class="skills-list content-card">
             <li class="skills-item">
-
+              <div class="title-wrapper">
+                <h5 class="h5">TDD</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">JUnit</h5>
+              </div>
+            </li>
+            <li class="skills-item">
               <div class="title-wrapper">
                 <h5 class="h5">AWS</h5>
               </div>
-
             </li>
-
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">Git & Github</h5>
+                <h5 class="h5">EC2</h5>
               </div>
-
             </li>
-
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">S3</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Docker</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Git & GitHub</h5>
+              </div>
+            </li>
           </ul>
+
+          <h3 class="h3 skills-title">Soft Skills</h3>
+
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" id="metodologias">Agile Methodologies</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" id="communication">Effective Communication</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" id="solving">Problem-solving</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" id="vizinho">Good Neighbor</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" id="teamwork">Teamwork</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" id="time-management">Time Management</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" id="stress-management">Stress Management</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" id="resilience">Resilience</h5>
+              </div>
+            </li>
+          </ul>
+
+          <h3 class="h3 skills-title" id="workS">Solidarity Work</h3>
+
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <a href="https://www.instagram.com/lutandopela_cleo?igsh=d3VqcWV1MTlnN3gy">
+                <div class="title-wrapper">
+                  <img src="./assets/images/cleo.jpeg" alt="Cleo" class="circular-image">
+                  <h5 class="h5" id="cleo">Help Cleo 🐱</h5>
+                 
+                </div>
+                <h5 class="h5" id="cleo">instagram.com/vaquinha.cleo</h5>
+              </a>
+            </li>
+          </ul>
+
 
         </section>
 
       </article>
+
+
+
 
     </div>
 
@@ -691,6 +907,254 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <script>
+    const toggleLanguageButton = document.getElementById('toggle-language');
+    const languageIcon = document.getElementById('language-icon');
+
+    toggleLanguageButton.addEventListener('click', () => {
+      const currentLanguage = document.documentElement.lang; // Obtenha o valor atualizado do idioma
+      const job = document.getElementById('job');
+      const titleMainOne = document.getElementById('titleMainOne');
+      const textOne = document.getElementById('textOne');
+      const descricao = document.getElementById('descricao');
+      const textDuo = document.getElementById('textDuo');
+      const what = document.getElementById('what');
+      const mobile = document.getElementById('mobile');
+      const textMobile = document.getElementById('textMobile');
+      const textFront = document.getElementById('textFront');
+      const textBack = document.getElementById('textBack');
+      const resume = document.getElementById('resume');
+      const education = document.getElementById('education');
+      const institute = document.getElementById('institute');
+      const dateEduc = document.getElementById('dateEduc');
+      const textEduc = document.getElementById('textEduc');
+      const xp = document.getElementById('xp');
+      const company = document.getElementById('company');
+      const dateJob = document.getElementById('dateJob');
+      const textJobOne = document.getElementById('textJobOne');
+      const textJobDuo = document.getElementById('textJobDuo');
+      const textJobTree = document.getElementById('textJobTree');
+      const tecOne = document.getElementById('tecOne');
+      const dateDuo = document.getElementById('dateDuo');
+      const textJobDuoOne = document.getElementById('textJobDuoOne');
+      const textJobDuoDuo = document.getElementById('textJobDuoDuo');
+      const tecJobDuo = document.getElementById('tecJobDuo');
+      const projectText = document.getElementById('projectText');
+      const projectOne = document.getElementById('projectOne');
+      const projectOneTextOne = document.getElementById('projectOneTextOne');
+      const projectOneTec = document.getElementById('projectOneTec');
+      const projectOneRepo = document.getElementById('projectOneRepo');
+      const projectDuo = document.getElementById('projectDuo');
+      const projectDuoTextOne = document.getElementById('projectDuoTextOne');
+      const projectDuoRepo = document.getElementById('projectDuoRepo');
+      const projectDuoTec = document.getElementById('projectDuoTec');
+      const projectDuoRepoDuo = document.getElementById('projectDuoRepoDuo');
+      const projectDuoTecDuo = document.getElementById('projectDuoTecDuo');
+      const projectTree = document.getElementById('projectTree');
+      const projectTreeText = document.getElementById('projectTreeText');
+      const projectTreeRepo = document.getElementById('projectTreeRepo');
+      const projectTreeTec = document.getElementById('projectTreeTec');
+      const projectTreeRepoDuo = document.getElementById('projectTreeRepoDuo');
+      const projectTreeTecDuo = document.getElementById('projectTreeTecDuo');
+      const projectFour = document.getElementById('projectFour');
+      const projectFourText = document.getElementById('projectFourText');
+      const progress = document.getElementById('progress');
+      const projectFourTec = document.getElementById('projectFourTec');
+      const projectFive = document.getElementById('projectFive');
+      const projectFiveText = document.getElementById('projectFiveText');
+      const progressOne = document.getElementById('progressOne');
+      const projectFiveTec = document.getElementById('projectFiveTec');
+      const habilidades = document.getElementById('habilidades');
+      const ling = document.getElementById('ling');
+      const metodologias = document.getElementById('metodologias');
+      const communication = document.getElementById('communication');
+      const solving = document.getElementById('solving');
+      const vizinho = document.getElementById('vizinho');
+      const teamwork = document.getElementById('teamwork');
+      const timemanagement = document.getElementById('time-management');
+      const stressmanagement = document.getElementById('stress-management');
+      const resilience = document.getElementById('resilience');
+      const otherJob = document.getElementById('otherJob');
+      const contact = document.getElementById('contact');
+      const curricu = document.getElementById('curricu');
+      const pageTitle = document.getElementById('pageTitle');
+      const projectMobile = document.getElementById('projectMobile');
+      const projectMobileRepo = document.getElementById('projectMobileRepo');
+      const projectMobileTec = document.getElementById('projectMobileTec');
+      const projectMobileRepoDuo = document.getElementById('projectMobileRepoDuo');
+      const projectMobileTecDuo = document.getElementById('projectMobileTecDuo');
+      const projectMobileTextOne = document.getElementById('projectMobileTextOne');
+      const projectVideo = document.getElementById('projectVideo');
+      const projectVideoDuo = document.getElementById('projectVideoDuo');
+      const workS = document.getElementById('workS');
+      const cleo = document.getElementById('cleo');
+
+
+      if (currentLanguage === 'en') {
+        console.log('pt-br');
+        document.documentElement.lang = 'pt-br';
+        languageIcon.src = "./assets/images/br.svg";
+        job.innerHTML = 'Engenheiro de Software';
+
+        titleMainOne.innerHTML = 'Sobre';
+        textOne.innerHTML = 'Sou um desenvolvedor full-stack brasileiro, apaixonado por inovação e resolução de problemas. Com expertise em desenvolvimento front-end e back-end, me destaco na criação de interfaces de usuário intuitivas e na arquitetura de soluções robustas. De HTML/CSS a Node.js e Spring Boot, abordo todos os aspectos do processo de desenvolvimento, buscando constantemente novos desafios para expandir meu conjunto de habilidades.';
+        descricao.innerHTML = 'Descrição';
+        textDuo.innerHTML = 'Sou um estudante de Engenharia de Software do Instituto Federal do Paraná, Brasil. Este é meu portfólio, onde mostrarei um pouco da minha experiência técnica, projetos de teste para vagas, projetos de faculdade e projetos de treinamento.';
+        what.innerHTML = 'O que eu faço';
+        mobile.innerHTML = 'Desenvolvimento Mobile';
+        textMobile.innerHTML = 'Com expertise em desenvolvimento nativo, multiplataforma e Progressive Web App (PWA), me destaco na criação de soluções móveis intuitivas. Utilizando tecnologias como React Native, Flutter e padrões PWA, garanto experiências de usuário perfeitas, colaborando de perto com equipes para fornecer aplicativos impactantes.';
+        textFront.innerHTML = 'Especializado na criação de interfaces web modernas e de alta qualidade, aproveito HTML/CSS, JavaScript e React.js para criar experiências de usuário envolventes. Com um olhar atento para o design e a funcionalidade, garanto que cada aplicativo web que desenvolvo seja visualmente atraente e fácil de usar. Além disso, minha experiência se estende ao desenvolvimento de designs responsivos, garantindo experiências perfeitas em vários dispositivos e tamanhos de tela.';
+        textBack.innerHTML = 'Trabalhando com extensa experiência em desenvolvimento web back-end, utilizo proficientemente JavaScript/TypeScript com Express.js para o ambiente de execução Node.js. Além disso, minhas habilidades se estendem ao framework Spring Boot do Java, onde entrego soluções back-end robustas e escaláveis que alimentam aplicativos web modernos. Com foco em desempenho e confiabilidade, projeto e implemento arquiteturas eficientes do lado do servidor, garantindo integração perfeita com sistemas front-end e fornecendo funcionalidades seguras de gerenciamento de dados.';
+        resume.innerHTML = 'Currículo';
+        education.innerHTML = 'Educação';
+        institute.innerHTML = 'Instituto Federal do Paraná';
+        dateEduc.innerHTML = '2023 — hoje';
+        textEduc.innerHTML = 'Bacharelado em Engenharia de Software; Data de formatura prevista: Dez. 2024';
+        xp.innerHTML = 'Experiência';
+        company.innerHTML = 'Ápice Sistemas - Desenvolvedor FullStack';
+        dateJob.innerHTML = 'Maio 2023 — Maio 2024';
+        textJobOne.innerHTML = 'Contribuindo para a criação, refatoração e manutenção de serviços web, otimizando para melhor desempenho em dispositivos de baixos recursos.';
+        textJobDuo.innerHTML = 'Atuando em projetos de gestão de restaurantes, desde servidor de impressão até controle de estoque, gestão de condomínios, especificamente controle de acesso com reconhecimento biométrico, integração com ERP, entre outros projetos fornecidos pela empresa';
+        textJobTree.innerHTML = 'Aplicação de metodologias ágeis, incluindo Scrum com uso de Kanban, trabalho em equipe e implantação em servidores locais e em nuvem usando Pipelines CI/CD, Docker e Cloudflare.';
+        tecOne.innerHTML = 'Tecnologias: JavaScript, Node.js, React.js, React Native, Express.js, MySQL, Git, GitHub';
+        dateDuo.innerHTML = 'Agosto 2021 — Abril 2023';
+        textJobDuoOne.innerHTML = 'Orquestrei iniciativas abrangentes de experiência do usuário, garantindo a satisfação do cliente e interações simplificadas.';
+        textJobDuoDuo.innerHTML = 'Supervisionei projetos de integração e manutenção, fornecendo orientação a membros juniores da equipe. Priorizei aprimorar a UX/UI para um engajamento de usuário perfeito.';
+        tecJobDuo.innerHTML = 'Tecnologias: MySQL';
+        projectText.innerHTML = 'Projetos';
+        projectOne.innerHTML = 'Sistema de Gerenciamento de Empréstimos e Concessões para Alunos e Externos';
+        projectOneTextOne.innerHTML = 'Este projeto nasceu como um desafio para os alunos de engenharia do segundo ano em 2022. Solicitado pelos funcionários do instituto, a melhor solução seria apresentada e se aprovado, implantada. Consiste em um sistema que permite ao aluno fazer login e emprestar armários, registrando o horário e quem emprestou. Também permite que os funcionários concedam armários a pessoas de fora do instituto fazendo o registro da concessão. O projeto inovou a forma como os empréstimos são feitos, uma vez que os alunos só precisam do terminal de empréstimo e não precisam mais da assistência de servidores. O projeto foi implantado em setembro de 2023 e ainda está em uso na biblioteca do Campus Paranavaí.';
+        projectOneTec.innerHTML = 'Tecnologias: Java, Hibernate, padrão MVC, PostgreSQL, Java Swing, Git, GitHub';
+        projectOneRepo.innerHTML = 'Repositório: github.com/marceloTerencianiIFPR/ArmariosIFPR';
+        projectDuo.innerHTML = 'Sistema de registro de tarefas';
+        projectDuoTextOne.innerHTML = 'Sistema de registro de tarefas com tags relacionadas a cada tarefa. Uma SPA foi desenvolvida como teste para uma empresa. Consiste em Crud de tarefas e tags com autenticação e gráficos. JWT foi usado para autenticação, e uma api de feriados também foi usada para especificar o feriado nas datas selecionadas.';
+        projectDuoRepo.innerHTML = 'Repositório: github.com/OAllanFernando/agende-tarefas';
+        projectDuoTec.innerHTML = 'Tecnologias: React, Git, GitHub';
+        projectDuoRepoDuo.innerHTML = 'Repositório: github.com/OAllanFernando/api-agende-tarefas';
+        projectDuoTecDuo.innerHTML = 'Tecnologias: Java, Spring Boot, JWT, MySql, Git, GitHub';
+        projectTree.innerHTML = 'IVendi, sistema de vendas de produtos';
+        projectTreeText.innerHTML = 'Sistema de vendas de produtos, realizado como teste para uma empresa. Crud de Clientes, cidades, estados, produtos e bairros, o sistema tem um layout de carrinho de compras, registra e lista vendas. Desenvolvido para demonstrar habilidades lógicas e proficiência nas tecnologias abordadas.';
+        projectTreeRepo.innerHTML = 'Repositório: github.com/OAllanFernando/iVendi';
+        projectTreeTec.innerHTML = 'Tecnologias: React, Git, GitHub';
+        projectTreeRepoDuo.innerHTML = 'Repositório: github.com/OAllanFernando/API_NODE-RegistroDeVendas';
+        projectTreeTecDuo.innerHTML = 'Tecnologias: Node.js, Sequelize, MySql, Git, GitHub';
+        projectFour.innerHTML = 'Sell Me, site para vender sites de vendas de pacotes e planos de sistemas';
+        projectFourText.innerHTML = 'Projeto possibilitará a compra de sites para vender planos e pacotes de sistemas de diferentes tipos.';
+        progress.innerHTML = 'Em progresso';
+        projectFourTec.innerHTML = 'Tecnologias: Python, Django, GitHub, Git, AWS, EC2, S3, MySQL';
+        projectFive.innerHTML = 'trabalho de conclusão de curso, sistema de armários em javascript';
+        projectFiveText.innerHTML = 'Foi proposto ao colegiado transcrever o sistema de armários do instituto federal de Java para Javascript, para explicar as diferenças no desenvolvimento entre tecnologias, mudando de desktop para web.';
+        progressOne.innerHTML = 'Em progresso';
+        projectFiveTec.innerHTML = 'Tecnologias: Javascript, Node.js, Electron.js, Git, PostgreSQL';
+        habilidades.innerHTML = 'Habilidades';
+        ling.innerHTML = 'Linguagens';
+        metodologias.innerHTML = 'Metodologias Ágeis';
+        communication.innerHTML = 'Comunicação Eficaz';
+        solving.innerHTML = 'Resolução de Problemas';
+        vizinho.innerHTML = 'Bom Vizinho';
+        teamwork.innerHTML = 'Trabalho em Equipe';
+        timemanagement.innerHTML = 'Gestão do Tempo';
+        stressmanagement.innerHTML = 'Gestão do Estresse';
+        resilience.innerHTML = 'Resiliência';
+        otherJob.innerHTML = 'Desenvolvedor FullStack';
+        contact.innerHTML = 'Contato';
+        curricu.innerHTML = 'Currículo';
+        pageTitle.innerHTML = 'Allan  enviou  uma  mensagem  (1)'
+        projectMobile.innerHTML = 'Projeto base react native.';
+        projectMobileRepo.innerHTML = 'Repositório: github.com/OAllanFernando/app-rn-websockets';
+        projectMobileTec.innerHTML = 'Tecnologias: React native, Jwt Authentication, websockets, Git, GitHub';
+        projectMobileRepoDuo.innerHTML = 'Repositório: github.com/OAllanFernando/api-websockets';
+        projectMobileTecDuo.innerHTML = 'Tecnologias: Java, Spring Boot, JWT, MySql, Spring Security, Spring Websocket, Git, GitHub';
+        projectMobileTextOne.innerHTML = 'Como eu precisava dessas funções em outro projeto, implementei login e rastreamento em uma aplicação base para acelerar o processo de desenvolvimento. Utilizei autenticação JWT para garantir a segurança no login e em todas as transações. Além disso, a aplicação compartilha a localização em tempo real através de WebSockets.';
+        projectVideo.innerHTML = 'Recentemente fiz um vídeo deste projeto, você pode vê-lo aqui: drive.google.com/file/demonstracao';
+        projectVideoDuo.innerHTML = 'Dê uma olhada aqui: drive.google.com/file/demonstracao/mobile';
+        workS.innerHTML = 'Trabalho Solidário';
+        cleo.innerHTML = 'Ajude Cleo';
+
+
+      } else {
+        console.log('en');
+        document.documentElement.lang = 'en';
+        languageIcon.src = "./assets/images/usa.svg"; // Altere o caminho para a bandeira inglesa
+        job.innerHTML = 'Software Engineer'; // Altere o título do trabalho para inglês
+
+        titleMainOne.innerHTML = 'About'; // Altere o título do trabalho para inglês
+        textOne.innerHTML = 'I\'m a Brazilian full-stack developer, passionate about innovation and problem-solving. With expertise in both front-end and back-end development, I excel in crafting intuitive user interfaces and architecting robust solutions. From HTML/CSS to Node.js and Spring Boot, I tackle every aspect of the development process, constantly seeking new challenges to expand my skill set.';
+        descricao.innerHTML = 'Description';
+        textDuo.innerHTML = 'I am an undergraduate Software Engineer from the Federal Institute of Paraná, Brazil. This is my portfolio, where I will showcase a little of my tech stack, test projects for vacancies, college projects, and training projects.';
+        what.innerHTML = 'What I Do';
+        mobile.innerHTML = 'Mobile Development';
+        textMobile.innerHTML = 'With expertise in both native, cross-platform, and Progressive Web App (PWA) development, I excel in crafting intuitive mobile solutions. Leveraging technologies like React Native, Flutter, and PWA standards, I ensure seamless user experiences while collaborating closely with teams to deliver impactful applications.';
+        textFront.innerHTML = 'Specializing in creating modern and high-quality web interfaces, I leverage HTML/CSS, JavaScript, and React.js to craft engaging user experiences. With a keen eye for design and functionality, I ensure that each web application I develop is both visually appealing and user-friendly. Additionally, my expertise extends to developing responsive designs, guaranteeing seamless experiences across various devices and screen sizes.';
+        textBack.innerHTML = 'Bringing extensive expertise in back-end web development, I proficiently utilize JavaScript/TypeScript with Express.js for the Node.js runtime environment. Additionally, my skills extend to Java\'s Spring Boot framework, where I deliver robust and scalable back-end solutions that power modern web applications. With a focus on performance and reliability, I design and implement efficient server-side architectures, ensuring seamless integration with front-end systems and providing secure data management functionalities.';
+        resume.innerHTML = 'Resume';
+        education.innerHTML = 'Education';
+        institute.innerHTML = 'Federal Institute of Paraná';
+        dateEduc.innerHTML =  '2023 — today';
+        textEduc.innerHTML = 'Bachelorship in Software Engineering; Expected graduation date: Dec. 2024';
+        xp.innerHTML = 'Experience';
+        company.innerHTML = 'Ápice Sistemas - FullStack Developer';
+        dateJob.innerHTML = 'May 2023 — May 2024';
+        textJobOne.innerHTML = 'Contributing to the creation, refactoring and maintenance of web services, optimizing for better performance on low-resource devices.';
+        textJobDuo.innerHTML = 'Acting on restaurant management projects, from print server to stock control, condominium management, specifically access control with biometric recognition, integration with ERP, among other projects provided by the company';
+        textJobTree.innerHTML = 'Applied agile methodologies, including Scrum with Kanban usage, teamwork, and deployment to local and cloud servers using CI/CD Pipelines, Docker and Cloudflare.';
+        tecOne.innerHTML = 'Technologies: JavaScript, Node.js, React.js, React Native, Express.js, MySQL, Git, GitHub';
+        dateDuo.innerHTML = 'August 2021 — April 2023';
+        textJobDuoOne.innerHTML = 'Orchestrated comprehensive user experience initiatives, ensuring client satisfaction and streamlined interactions.';
+        textJobDuoDuo.innerHTML = 'Oversaw integration and maintenance projects, providing guidance to junior team members. Prioritized enhancing UX/UI for seamless user engagement.';
+        tecJobDuo.innerHTML = 'Technologies: MySQL';
+        projectText.innerHTML = 'Projects';
+        projectOne.innerHTML = 'Loan and Concessions Management System for Students and Externals';
+        projectOneTextOne.innerHTML = 'This project was born as a challenge for second-year engineering students in 2022. Requested by institute employees, the best solution would be presented and, if approved, deployed. It consists of a system that allows students to log in and borrow lockers, recording the time and who borrowed them. It also allows employees to grant lockers to people outside the institute by registering the concession. The project innovated the way loans are made, since students only need the loan terminal and no longer need assistance from servers. The project was deployed in September 2023 and is still in use at the Paranavaí Campus library.';
+        projectOneTec.innerHTML = 'Technologies: Java, Hibernate, MVC pattern, PostgreSQL, Java Swing, Git, GitHub';
+        projectOneRepo.innerHTML = 'Repository: github.com/marceloTerencianiIFPR/ArmariosIFPR';
+        projectDuo.innerHTML = 'Task registration system';
+        projectDuoTextOne.innerHTML = 'Task registration system with tags related to each task. A SPA was developed as a test for a company. It consists of task crud and tags with authentication and graphics. JWT was used for authentication, and a holidays API was also used to specify the holiday on the selected dates.';
+        projectDuoRepo.innerHTML = 'Repository: github.com/OAllanFernando/agende-tarefas';
+        projectDuoTec.innerHTML = 'Technologies: React, Git, GitHub';
+        projectDuoRepoDuo.innerHTML = 'Repository: github.com/OAllanFernando/api-agende-tarefas';
+        projectDuoTecDuo.innerHTML = 'Technologies: Java, Spring Boot, JWT, MySql, Git, GitHub';
+        projectTree.innerHTML = 'IVendi, selling products system';
+        projectTreeText.innerHTML = 'Product sales system, carried out as a test for a company. Crud of Customers, cities, states, products and neighborhoods, the system has a shopping cart layout, records and lists sales. Developed to demonstrate logical skills and proficiency in the technologies covered.';
+        projectTreeRepo.innerHTML = 'Repository: github.com/OAllanFernando/iVendi';
+        projectTreeTec.innerHTML = 'Technologies: React, Git, GitHub';
+        projectTreeRepoDuo.innerHTML = 'Repository: github.com/OAllanFernando/API_NODE-RegistroDeVendas';
+        projectTreeTecDuo.innerHTML = 'Technologies: Node.js, Sequelize, MySql, Git, GitHub';
+        projectFour.innerHTML = 'Sell Me, site to sell package sales sites and system plans';
+        projectFourText.innerHTML = 'Project will make it possible to purchase websites to sell plans and system packages of different types.';
+        progress.innerHTML = 'In progress';
+        projectFourTec.innerHTML = 'Technologies: Python, Django, GitHub, Git, AWS, EC2, S3, MySQL';
+        projectFive.innerHTML = 'course completion work, javascript locker system';
+        projectFiveText.innerHTML = 'It was proposed to the collegiate to transcribe the federal institute\'s cabinet system from Java to Javascript, to explain the differences in development between technologies, changing from desktop to web.';
+        progressOne.innerHTML = 'In progress';
+        projectFiveTec.innerHTML = 'Technologies: Javascript, Node.js, Electron.js, Git, PostgreSQL';
+        habilidades.innerHTML = 'Skills';
+        ling.innerHTML = 'Languages';
+        metodologias.innerHTML = 'Agile Methodologies';
+        communication.innerHTML = 'Effective Communication';
+        solving.innerHTML = 'Problem-solving';
+        vizinho.innerHTML = 'Good Neighbor';
+        teamwork.innerHTML = 'Teamwork';
+        timemanagement.innerHTML = 'Time Management';
+        stressmanagement.innerHTML = 'Stress Management';
+        resilience.innerHTML = 'Resilience';
+        otherJob.innerHTML = 'FullStack Developer';
+        contact.innerHTML = 'Show Contacts';
+        curricu.innerHTML = 'Curriculum';
+        pageTitle.innerHTML = 'Allan  send  you  new  a  message  (1)';
+        projectMobile.innerHTML = 'React native base project.';
+        projectMobileRepo.innerHTML = 'Repository: github.com/OAllanFernando/app-rn-websockets';
+        projectMobileTec.innerHTML = 'Technologies: React native, Jwt Authentication, websockets, Git, GitHub';
+        projectMobileRepoDuo.innerHTML = 'Repository: github.com/OAllanFernando/api-websockets';
+        projectMobileTecDuo.innerHTML = 'Technologies: Java, Spring Boot, JWT, MySql, Spring Security, Spring Websocket, Git, GitHub';
+        projectMobileTextOne.innerHTML = 'As I needed these functions for another project, I implemented login and tracking features in a base application to speed up the development process. I used JWT authentication to ensure security in login and all transactions. Additionally, the application shares location in real-time via WebSockets.';
+        projectVideo.innerHTML = 'I recently made a video of this project, you can watch it here: drive.google.com/file/demonstracao';
+        projectVideoDuo.innerHTML = 'Take a look here: drive.google.com/file/demonstracao/mobile';
+        workS.innerHTML = 'Solidarity Work';
+        cleo.innerHTML = 'Help Cleo';
+      }
+    });
+  </script>
 </body>
 
 </html>
