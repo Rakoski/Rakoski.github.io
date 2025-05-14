@@ -397,19 +397,19 @@
               <a href="#">
                 <h4 class="h4 timeline-item-title">Icode - Software Engineer</h4>
               </a>
-              <span id="dateDuo">Mar 2025 - Present</span>
-              <p class="timeline-text" id="textJobOne">
+              <span id="dateFour">Mar 2025 - Present</span>
+              <p class="timeline-text" id="textJobSeven">
                 Development of CRM systems and ERP business solutions
               </p>
-              <p class="timeline-text" style="margin-top: 10px;" id="textJobDuo">
+              <p class="timeline-text" style="margin-top: 10px;" id="textJobEight">
                 Developed an advanced AI audio transcription system in many of our clients bases.
               </p>
-              <p class="timeline-text" style="margin-top: 10px;" id="textJobTree">
+              <p class="timeline-text" style="margin-top: 10px;" id="textJobNine">
                 Working with a problem-finding and dynamic environment where everyone contributes to the product 
                 while maintaining programming best practices and focusing on teamwork and client issue resolution.
               </p>
-              <p class="timeline-text" style="margin-top: 10px;" id="tecOne">
-                Technologies: Java, Sprint Boot, Langchain4j, PostgreSQL, Jakarta EE, Self-hosting
+              <p class="timeline-text" style="margin-top: 10px;" id="tecThree">
+                Technologies: Java, Spring Boot, Langchain4j, PostgreSQL, Jakarta EE, Self-hosting
               </p>
             </li>
             
@@ -417,20 +417,20 @@
               <a href="#">
                 <h4 class="h4 timeline-item-title">UniFatecie University Center - Software Engineer</h4>
               </a>
-              <span id="dateDuo">Mar 2024 - Mar 2025</span>
-              <p class="timeline-text" id="textJobOne">
+              <span id="dateThree">Mar 2024 - Mar 2025</span>
+              <p class="timeline-text" id="textJobFour">
                 Development and prototyping of educational systems for a Higher Education institution with more than 200,000 students across Brazil.
               </p>
-              <p class="timeline-text" style="margin-top: 10px;" id="textJobDuo">
+              <p class="timeline-text" style="margin-top: 10px;" id="textJobFive">
                 As an Engineer, involved in implementing improvements to a Free Courses platform, participating in its redesign, 
                 both in it's Backend and Frontend, transforming an architecture that had constant bottlenecks due to scale into 
                 one that can serve all students smoothly with spare processing capacity.
               </p>
-              <p class="timeline-text" style="margin-top: 10px;" id="textJobTree">
+              <p class="timeline-text" style="margin-top: 10px;" id="textJobSix">
                 Working with agile methodologies including Scrum and Kanban, utilizing CI/CD (Azure DevOps) and Git Flow, 
                 while maintaining programming best practices and focusing on teamwork and client issue resolution.
               </p>
-              <p class="timeline-text" style="margin-top: 10px;" id="tecOne">
+              <p class="timeline-text" style="margin-top: 10px;" id="tecTwo">
                 Technologies: NextJS, React, Spring Boot, SQL Server, Azure Cloud
               </p>
             </li>
@@ -826,8 +826,18 @@
       const textJobOne = document.getElementById('textJobOne');
       const textJobDuo = document.getElementById('textJobDuo');
       const textJobTree = document.getElementById('textJobTree');
+      const textJobFour = document.getElementById('textJobFour');
+      const textJobFive = document.getElementById('textJobFive');
+      const textJobSix = document.getElementById('textJobSix');
+      const textJobSeven = document.getElementById('textJobSeven');
+      const textJobEight = document.getElementById('textJobEight');
+      const textJobNine = document.getElementById('textJobNine');
       const tecOne = document.getElementById('tecOne');
+      const tecTwo = document.getElementById('tecTwo');
+      const tecThree = document.getElementById('tecThree');
       const dateDuo = document.getElementById('dateDuo');
+      const dateThree = document.getElementById('dateThree');
+      const dateFour = document.getElementById('dateFour');
       const projectText = document.getElementById('projectText');
       const progress = document.getElementById('progress');
       const habilidades = document.getElementById('habilidades');
@@ -872,8 +882,17 @@
         textJobDuo.innerHTML = 'Atuando em projetos de gestão de restaurantes, desde servidor de impressão até controle de estoque, gestão de condomínios, especificamente controle de acesso com reconhecimento biométrico, integração com ERP, entre outros projetos fornecidos pela empresa';
         textJobTree.innerHTML = 'Aplicação de metodologias ágeis, incluindo Scrum com uso de Kanban, trabalho em equipe e implantação em servidores locais e em nuvem usando Pipelines CI/CD, Docker e Cloudflare.';
         tecOne.innerHTML = 'Tecnologias: JavaScript, Node.js, React.js, React Native, Express.js, MySQL, Git, GitHub';
+        textJobFour.innerHTML = 'Contribuindo para a criação, refatoração e manutenção de serviços web, otimizando para melhor desempenho em dispositivos de baixos recursos.';
+        textJobFive.innerHTML = 'Atuando em projetos de gestão de restaurantes, desde servidor de impressão até controle de estoque, gestão de condomínios, especificamente controle de acesso com reconhecimento biométrico, integração com ERP, entre outros projetos fornecidos pela empresa';
+        textJobSix.innerHTML = 'Aplicação de metodologias ágeis, incluindo Scrum com uso de Kanban, trabalho em equipe e implantação em servidores locais e em nuvem usando Pipelines CI/CD, Docker e Cloudflare.';
+        textJobSeven.innerHTML = 'Contribuindo para a criação, refatoração e manutenção de serviços web, otimizando para melhor desempenho em dispositivos de baixos recursos.';
+        textJobEight.innerHTML = 'Atuando em projetos de gestão de restaurantes, desde servidor de impressão até controle de estoque, gestão de condomínios, especificamente controle de acesso com reconhecimento biométrico, integração com ERP, entre outros projetos fornecidos pela empresa';
+        textJobNine.innerHTML = 'Working with a problem-finding and dynamic environment where everyone contributes to the product while maintaining programming best practices and focusing on teamwork and client issue resolution.';
+        tecThree.innerHTML = 'Tecnologias: Java, Spring Boot, Langchain4j, PostgreSQL, Jakarta EE, Node.js, Python, Bare-metal';
         dateOne.innerHTML = 'Ápice - Engenheiro de software e desenvolvedor fullstack'
-        dateDuo.innerHTML = 'Março 2023 — Abril 2024';
+        dateDuo.innerHTML = 'Jan 2023 — Mar 2024';
+        dateThree.innerHTML = 'Mar 2024 — Mar 2025';
+        dateFour.innerHTML = 'Mar 2025 — Present';
         projectText.innerHTML = 'Projetos';
         habilidades.innerHTML = 'Habilidades';
         ling.innerHTML = 'Linguagens';
@@ -915,9 +934,19 @@
         textJobOne.innerHTML = 'Contributing to the creation, refactoring and maintenance of web services, optimizing for better performance on low-resource devices.';
         textJobDuo.innerHTML = 'Acting on restaurant management projects, from print server to stock control, condominium management, specifically access control with biometric recognition, integration with ERP, among other projects provided by the company';
         textJobTree.innerHTML = 'Applied agile methodologies, including Scrum with Kanban usage, teamwork, and deployment to local and cloud servers using CI/CD Pipelines, Docker and Cloudflare.';
+        textJobFour.innerHTML = 'Development and prototyping of educational systems for a Higher Education institution with more than 200,000 students across Brazil.';
+        textJobFive.innerHTML = 'As an Engineer, involved in implementing improvements to a Free Courses platform, participating in its redesign, both in its Backend and Frontend, transforming an architecture that had constant bottlenecks due to scale into one that can serve all students smoothly with spare processing capacity.';
+        textJobSix.innerHTML = 'Working with agile methodologies including Scrum and Kanban, utilizing CI/CD (Azure DevOps) and Git Flow, while maintaining programming best practices and focusing on teamwork and client issue resolution.';
+        tecTwo.innerHTML = 'Tecnologies: JavaScript, Node.js, React.js, Next.js, Java, Spring Boot, SQL Server, Express.js, MySQL, Git, Azure Cloud.';
+        textJobSeven.innerHTML = ' Development of CRM systems and ERP business solutions';
+        textJobEight.innerHTML = 'Developed an advanced AI audio transcription system in many of our clients bases.';
+        textJobNine.innerHTML = 'Aplicação de metodologias ágeis, incluindo Scrum com uso de Kanban, trabalho em equipe e implantação em servidores locais e em nuvem usando Pipelines CI/CD, Docker e Cloudflare.';
+        tecThree.innerHTML = 'Tecnologias: Java, Spring Boot, Langchain4j, PostgreSQL, Jakarta EE, Node.js, Python, Bare-metal';
+        dateDuo.innerHTML = 'Jan 2023 — Mar 2024';
+        dateThree.innerHTML = 'Mar 2024 — Mar 2024';
+        dateFour.innerHTML = 'Mar 2024 — Present';
         tecOne.innerHTML = 'Technologies: JavaScript, Node.js, React.js, React Native, Express.js, MySQL, Git, GitHub';
         dateOne.innerHTML = 'Ápice - Software Engineer and fullstack developer'
-        dateDuo.innerHTML = 'March 2023 — April 2024';
         projectText.innerHTML = 'Projects';
         habilidades.innerHTML = 'Skills';
         ling.innerHTML = 'Languages';
